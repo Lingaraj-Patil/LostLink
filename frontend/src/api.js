@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000/api' });
+const API = axios.create({ baseURL: 'https://lost-link-323.vercel.app/' });
 
 // Lost Items
 export const fetchLostItems = () => API.get('/lost');
