@@ -20,7 +20,7 @@ const AddFoundItem = () => {
       formData.append("location", location);
       if (image) formData.append("image", image);
 
-      const res = await axios.post("http://localhost:5000/api/found", formData, {
+      const res = await axios.post("https://lost-link-323.vercel.app/api/found", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
